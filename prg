@@ -48,4 +48,36 @@ sudo nano /etc/ansible/hosts
 ansible-inventory --list -y
 sudo ansible all -m ping
 
+8th:
+wsl --install
+
+sudo apt update
+
+sudo apt install openjdk-17-jdk -y
+java -version
+javac -version
+
+sudo apt install maven -y
+mvn -version
+
+wget https://get.jenkins.io/war-stable/latest/jenkins.war
+java -jar jenkins.war
+
+cat ~/.jenkins/secrets/initialAdminPassword
+
+sudo apt install ansible -y
+ansible --version
+
+sudo apt install openssh-server -y
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
+ssh-keygen
+ssh-copy-id $(whoami)@localhost
+ssh localhost
+
+nano hosts
+
+ansible all -i hosts -m ping
+
 
