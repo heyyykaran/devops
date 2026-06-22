@@ -1,0 +1,15 @@
+Install Eclipse IDE for Java Developers.
+Install JDK and set JAVA_HOME and PATH environment variables.
+Download Apache Maven and extract the ZIP file.
+Add Maven's bin folder to the system PATH.
+
+Verify Maven installation using:
+
+mvn -v
+
+Download and extract Gradle distribution.
+Add Gradle's bin folder to the system PATH.
+
+Verify Gradle installation using:
+
+gradle -v
