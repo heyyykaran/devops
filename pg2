@@ -32,4 +32,21 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
+} 
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass.set('App')
 }
