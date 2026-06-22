@@ -1,0 +1,53 @@
+PROGRAM – 5
+
+TITLE: Introduction to Jenkins – Installation and Configuration
+
+AIM:
+To install and configure Jenkins for Continuous Integration.
+
+PROCEDURE:
+
+1. Download Jenkins from the official website.
+
+2. Run the Jenkins MSI Installer.
+
+3. Select "Run service as Local System".
+
+4. Choose port number 8080 and continue installation.
+
+5. Verify Java installation using:
+
+   java -version
+
+6. Complete the Jenkins installation and click Finish.
+
+7. Open Jenkins in a browser:
+
+   http://localhost:8080
+
+8. Obtain the Administrator Password from:
+
+   C:\ProgramData\Jenkins.jenkins\secrets\initialAdminPassword
+
+9. Paste the password and continue.
+
+10. Select "Install Suggested Plugins".
+
+11. Skip registration or create an admin user.
+
+12. Open Jenkins Dashboard.
+
+COMMAND:
+
+```text id="g1px7v"
+java -version
+```
+
+OUTPUT:
+
+```text id="kmoltz"
+Jenkins Dashboard opened successfully at http://localhost:8080
+```
+
+RESULT:
+Successfully installed and configured Jenkins for first-time use.
