@@ -1,0 +1,59 @@
+PROGRAM – 6
+
+TITLE: Continuous Integration with Jenkins using Maven
+
+AIM:
+To set up a Continuous Integration (CI) pipeline in Jenkins and build a Maven project automatically.
+
+PROCEDURE:
+
+1. Open Jenkins Dashboard.
+
+2. Click Manage Jenkins → Plugins.
+
+3. Search and install Maven Integration Plugin.
+
+4. Verify that Maven Project option is available.
+
+5. Go to Manage Jenkins → Tools.
+
+6. Configure Maven installation (MAVEN_HOME).
+
+7. Click New Item.
+
+8. Enter Project Name and select Freestyle Project.
+
+9. Click OK.
+
+10. Under Build section, click Add Build Step.
+
+11. Select Invoke top-level Maven targets.
+
+12. Choose the configured Maven version.
+
+13. Enter Goal:
+
+    clean install
+
+14. In Advanced options, specify the path of pom.xml.
+
+15. Click Apply and Save.
+
+16. Click Build Now.
+
+17. View the build result in Console Output.
+
+COMMAND:
+
+```text
+clean install
+```
+
+OUTPUT:
+
+```text
+BUILD SUCCESS
+```
+
+RESULT:
+Successfully configured a Jenkins CI Pipeline and built the Maven project using Jenkins.
