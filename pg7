@@ -10,7 +10,7 @@ PROCEDURE:
 1. Create a user and provide sudo privileges.
 
    sudo adduser [username]
-   sudo usermod -aG sudo ansible
+   sudo usermod -aG sudo username
 
 2. Switch to the user.
 
