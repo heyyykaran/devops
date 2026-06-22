@@ -1,0 +1,72 @@
+PROGRAM – 7
+
+TITLE: Configuration Management with Ansible
+
+AIM:
+To install and configure Ansible and execute a basic playbook using inventory and modules.
+
+PROCEDURE:
+
+1. Create a user and provide sudo privileges.
+
+   sudo adduser [username]
+   sudo usermod -aG sudo ansible
+
+2. Switch to the user.
+
+   sudo su username
+
+3. Generate SSH key.
+
+   ssh-keygen
+
+4. Copy SSH key to host.
+
+   ssh-copy-id username@localhost
+   ssh ansible@localhost
+
+5. Install Ansible.
+
+   sudo apt update
+   sudo apt install ansible -y
+
+6. Verify installation.
+
+   ansible --version
+
+7. Create inventory file.
+
+   sudo mkdir -p /etc/ansible
+   sudo nano /etc/ansible/hosts
+
+8. Add the following entry:
+
+   [local]
+   localhost ansible_connection=local
+
+9. Check inventory.
+
+   ansible-inventory --list -y
+
+10. Test connection.
+
+    ansible all -m ping
+
+COMMANDS:
+
+sudo apt update
+
+sudo apt install ansible -y
+
+ansible --version
+
+ansible all -m ping
+
+OUTPUT:
+
+localhost | SUCCESS
+
+pong
+
+RESULT:
+Successfully installed and configured Ansible and tested host connectivity.
