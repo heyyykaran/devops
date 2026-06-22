@@ -1,0 +1,60 @@
+PROGRAM – 4
+
+TITLE: Build and Run a Java Application with Maven and Migrate the Same Application to Gradle
+
+AIM:
+To build a Java application using Maven and migrate it to Gradle.
+
+PROCEDURE:
+
+1. Create a Maven project as in Program-2.
+
+2. Build and run the Maven project to get "Hello World!" output.
+
+3. Open Terminal (Ctrl + Alt + Shift + T).
+
+4. Execute:
+
+   gradle init
+
+5. When prompted for migration from Maven to Gradle, select:
+
+   yes
+
+6. Select Build Script DSL:
+
+   Groovy
+
+7. Accept API Generator option by selecting:
+
+   yes
+
+8. Build the Gradle project:
+
+   gradle build
+
+9. Update build.gradle file if required.
+
+10. Run the following commands:
+
+gradle clean build
+
+gradle run
+
+COMMANDS:
+
+```text
+gradle init
+gradle build
+gradle clean build
+gradle run
+```
+
+OUTPUT:
+
+```text
+Hello World! Welcome to pgm4
+```
+
+RESULT:
+Successfully migrated a Maven project to Gradle and executed the application successfully.
