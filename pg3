@@ -1,0 +1,44 @@
+Open Command Prompt.
+
+Create a new directory:
+
+mkdir pgm3
+
+Move to the directory:
+
+cd pgm3
+
+Initialize Gradle project:
+
+gradle init
+
+Select the following options:
+Build Type: Application
+Implementation Language: Groovy
+Java Version: 21 (or available version)
+Project Structure: Single Application Project
+Build Script DSL: Kotlin
+Wait until BUILD SUCCESSFUL message appears.
+
+Run the project using:
+
+gradlew run
+
+To view project structure, use:
+
+tree
+
+COMMANDS:
+
+mkdir pgm3
+cd pgm3
+gradle init
+gradlew run
+tree
+
+OUTPUT:
+
+Hello World!
+
+RESULT:
+Successfully created and executed a Gradle project using Groovy/Kotlin DSL and Gradle build scripts.
