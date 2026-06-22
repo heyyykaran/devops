@@ -1,0 +1,35 @@
+Open Eclipse IDE.
+Select File → New → Maven Project.
+Select "Use Default Workspace Location" and click Next.
+
+In Filter, type "apache" and select:
+
+maven-archetype-quickstart
+
+Enter the following details:
+
+Group Id : com.program2.maven
+Artifact Id : program2-example-jar
+Version : 0.0.1-SNAPSHOT
+Package : com.program2.maven.program2
+
+Click Finish.
+Confirm configuration by typing Y.
+Right-click the project and select Maven Build.
+
+Enter Goal:
+
+package
+
+Click Run.
+Open App.java and run the Java application.
+
+PROGRAM:
+
+package com.program2.maven.program2;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
